@@ -1,5 +1,5 @@
 
-`Equipment Tracker Web Application`
+## `Equipment Tracker Web Application`
 
 I've created a complete web frontend for your equipment tracker using Flask! Here's what I've built:
 
