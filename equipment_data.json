@@ -9,5 +9,38 @@
     "resale_location": "QRZ",
     "condition": "Excellent",
     "date_added": "2025-08-03 19:34:20"
+  },
+  {
+    "id": 2,
+    "description": "Yaesu FTM 400XDR/DE",
+    "cost": 795.0,
+    "purchase_date": "2020-06-12",
+    "current_retail": 0.0,
+    "current_resale": 425.0,
+    "resale_location": "QRZ; bought used; discontinued model",
+    "condition": "Good",
+    "date_added": "2025-08-03 22:04:16"
+  },
+  {
+    "id": 3,
+    "description": "Shark RF OpenSpot 4 Pro",
+    "cost": 295.0,
+    "purchase_date": "2025-03-06",
+    "current_retail": 320.0,
+    "current_resale": 240.0,
+    "resale_location": "QRZ; bought USED on QRZ",
+    "condition": "Good",
+    "date_added": "2025-08-03 22:08:44"
+  },
+  {
+    "id": 4,
+    "description": "Anytone 878UV Plus",
+    "cost": 238.99,
+    "purchase_date": "2020-05-15",
+    "current_retail": 334.99,
+    "current_resale": 290.0,
+    "resale_location": "QRZ",
+    "condition": "Excellent",
+    "date_added": "2025-08-03 22:14:10"
   }
 ]
