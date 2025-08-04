@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Equipment - Equipment Tracker{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="fas fa-edit me-2"></i>Edit Equipment
+                </h5>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    <div class="row">
+                        <div class="col-md-8 mb-3">
+                            <label for="description" class="form-label">Description *</label>
+                            <input type="text" class="form-control" id="description" name="description" 
+                                   value="{{ equipment.description }}" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="cost" class="form-label">Purchase Cost *</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="cost" name="cost" 
+                                       step="0.01" min="0" value="{{ equipment.cost }}" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="purchase_date" class="form-label">Purchase Date</label>
+                            <input type="date" class="form-control" id="purchase_date" name="purchase_date" 
+                                   value="{{ equipment.purchase_date }}">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="condition" class="form-label">Condition</label>
+                            <select class="form-select" id="condition" name="condition">
+                                <option value="Excellent" {{ 'selected' if equipment.condition == 'Excellent' else '' }}>Excellent</option>
+                                <option value="Good" {{ 'selected' if equipment.condition == 'Good' else '' }}>Good</option>
+                                <option value="Fair" {{ 'selected' if equipment.condition == 'Fair' else '' }}>Fair</option>
+                                <option value="Poor" {{ 'selected' if equipment.condition == 'Poor' else '' }}>Poor</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="current_retail" class="form-label">Current Retail Price</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="current_retail" name="current_retail" 
+                                       step="0.01" min="0" value="{{ equipment.current_retail }}">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="current_resale" class="form-label">Current Resale Price</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="current_resale" name="current_resale" 
+                                       step="0.01" min="0" value="{{ equipment.current_resale }}">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="resale_location" class="form-label">Resale Location</label>
+                        <input type="text" class="form-control" id="resale_location" name="resale_location" 
+                               value="{{ equipment.resale_location }}" placeholder="e.g., eBay, Craigslist, Local store">
+                    </div>
+                    
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save me-1"></i>Update Equipment
+                        </button>
+                        <a href="{{ url_for('index') }}" class="btn btn-secondary">
+                            <i class="fas fa-times me-1"></i>Cancel
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
