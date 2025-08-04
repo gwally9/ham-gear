@@ -38,4 +38,4 @@ The application will automatically create:
 - Professional Look: Modern UI with consistent styling
 
 ## DASHBOARD:
-<img src=" ">
+<img src="https://github.com/gwally9/ham-gear/blob/main/Dashboard.png">
