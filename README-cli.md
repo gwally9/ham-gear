@@ -1,4 +1,4 @@
-`Equipment Purchase Tracker`
+# `Equipment Purchase Tracker`
  
 I've created a comprehensive Python application for tracking equipment purchases. Here's what it includes:
 
